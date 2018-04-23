@@ -5,7 +5,9 @@ const app = express();
 
 app.use('/api', router)
 
-const server = app.listen(8080, () => {
+const port = process.env.PORT;
+
+const server = app.listen(port, () => {
     console.log("Server running....");
 });
 
